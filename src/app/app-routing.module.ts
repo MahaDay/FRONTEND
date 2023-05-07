@@ -26,12 +26,13 @@ import { DetailsProduitComponent } from './produit/details-produit/details-produ
 import { DetailsTransactionComponent } from './transaction/details-transaction/details-transaction.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorsComponent } from './errors/errors.component';
+import { AuthGuardService } from './_services/auth-guard.service';
 
 
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
@@ -57,8 +58,8 @@ const routes: Routes = [
   { path: 'transactions', component: TransactionListComponent },
   { path: 'detailsProduit/:id', component: DetailsProduitComponent },
   { path: 'detailsTransaction/:id', component: DetailsTransactionComponent },
-  { path : 'Dashboard', component: DashboardComponent },
-  { path : '**', component: ErrorsComponent },
+  { path : 'Dashboard', component: DashboardComponent, canActivate : [AuthGuardService] },
+  { path : '**', component: ErrorsComponent  },
   
   
   { path: '', redirectTo: 'home', pathMatch: 'full' }

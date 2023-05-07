@@ -13,6 +13,9 @@ const httpOptions = {
 })
 export class AuthService {
   constructor(private http: HttpClient) {}
+  isLoggedIn(){
+    return localStorage.getItem('token');
+  }
 
   login(username: string, password: string): Observable<any> {
     return this.http.post(

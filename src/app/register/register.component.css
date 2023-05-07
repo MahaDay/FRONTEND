@@ -65,7 +65,7 @@ opacity: 0.8;
 
 .label{
   font-weight: bold;
-  top: -20px;
+  top: -40px;
   position: relative;
   
   
@@ -105,12 +105,12 @@ opacity: 0.8;
 }
 
 .profile-img {
-  width: 96px;
-  height: 96px; 
+  width: 86px;
+  height: 86px; 
   margin: 0 auto 10px;
   display: block;
  
-  margin-top: 25px;
+  margin-top: 15px;
   
 }
 
