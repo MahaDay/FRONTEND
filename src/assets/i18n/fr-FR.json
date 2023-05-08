@@ -74,6 +74,16 @@
   "Email is required":"Le courriel est requis",
   "Email must be a valid email address":"Le courriel doit être une adresse courriel valide",
   "Signup failed!":"L’inscription a échoué !",
-  "Your registration is successful!":"Votre inscription est réussie!"
+  "Your registration is successful!":"Votre inscription est réussie!",
+  "Welcome to FRS":"Bienvenus dans FRS",
+  "Login for making the right decision.":"Connectez-vous pour prendre la bonne décision.",
+  "Create your account":"Créer votre compte",
+  "Sign up in just a few seconds!":"Inscrivez-vous dans quelques secondes!",
+  "User registration":"Inscription de l’utilisateur",
+  "Oops! Page not found":"Oups! Page introuvable",
+  "The page you are looking for might have been removed, had its name changed or is temporarily unavailable.":"La page que vous recherchez pourrait avoir été supprimée, si son nom a changé ou est temporairement indisponible.",
+  "Go to home page":"Aller à la page d’accueil",
+  "Dashboard":"Tableau de bord",
+  "Dashboard Details":"Détails du tableau de bord"
 
 }
