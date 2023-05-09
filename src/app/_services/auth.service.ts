@@ -13,9 +13,13 @@ const httpOptions = {
 })
 export class AuthService {
   constructor(private http: HttpClient) {}
-  isLoggedIn(){
-    return localStorage.getItem('token');
+  isLoggedIn() {
+    const token = localStorage.getItem('token');
+    console.log(`La valeur de la clé "token" est : ${token}`);
+    return token !== null;
   }
+  
+  
 
   login(username: string, password: string): Observable<any> {
     return this.http.post(

@@ -58,7 +58,7 @@ const routes: Routes = [
   { path: 'transactions', component: TransactionListComponent },
   { path: 'detailsProduit/:id', component: DetailsProduitComponent },
   { path: 'detailsTransaction/:id', component: DetailsTransactionComponent },
-  { path : 'Dashboard', component: DashboardComponent, canActivate : [AuthGuardService] },
+  { path : 'Dashboard', component: DashboardComponent},
   { path : '**', component: ErrorsComponent  },
   
   

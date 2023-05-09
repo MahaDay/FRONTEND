@@ -34,6 +34,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorsComponent } from './errors/errors.component';
+import { AuthGuardService } from './_services/auth-guard.service';
 
 
 
@@ -92,7 +93,7 @@ export function createTranslateLoader(http: HttpClient) {
       defaultLanguage: 'en-US',
     }),
   ],
-  providers: [httpInterceptorProviders],
+  providers: [httpInterceptorProviders,AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
